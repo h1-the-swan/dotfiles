@@ -4,8 +4,18 @@ else
   export PS1='%3~$(git_info_for_prompt)%# '
 fi
 
-export LSCOLORS="exfxcxdxbxegedabagacad"
+# export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
+
+# 2014-07-18 added by h1-the-swan
+# Enable colors for the directory listing
+alias ls='ls -GFh'
+# The 'G' option enables the coloring
+# The 'F' option adds '/' for directories, '|' for pipes, '@' for symlinks (and others?)
+# The 'h' option formats file sizes in human readable units
+#
+# Change colors to look better on black background:
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 fpath=($ZSH/functions $fpath)
 
