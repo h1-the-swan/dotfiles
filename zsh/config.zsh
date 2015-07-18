@@ -16,6 +16,8 @@ alias ls='ls -GFh'
 #
 # Change colors to look better on black background:
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+# Use vi key-bindings:
+bindkey -v
 
 fpath=($ZSH/functions $fpath)
 
