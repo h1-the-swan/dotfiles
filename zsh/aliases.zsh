@@ -8,7 +8,7 @@ alias reload!='. ~/.zshrc'
 function httpserver() { 
     http-server || 
     {
-	    echo "http-server could not be run. Do you have node.js and http-server installed? Tyring Python's SimpleHTTPServer instead" ;
+	    echo "http-server could not be run. Do you have node.js and http-server installed? Trying Python's SimpleHTTPServer instead" ;
 	    python -m SimpleHTTPServer; 
     }
 }
