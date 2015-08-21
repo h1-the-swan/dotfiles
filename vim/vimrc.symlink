@@ -101,6 +101,7 @@ augroup pencil
 	autocmd FileType tex :PencilSoft
 	autocmd FileType text :PencilSoft
 	autocmd FileType markdown :PencilSoft
+	autocmd FileType html :PencilSoft
 augroup END
 
 " Tweaks for ctrlp.vim
