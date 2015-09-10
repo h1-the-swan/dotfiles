@@ -58,3 +58,12 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
+
+# Added by JP 2015-09-10
+# The following is standard with emacs key bindings, but not with vi key bindings enabled
+# http://unix.stackexchange.com/questions/44115/how-do-i-perform-a-reverse-history-search-in-zshs-vi-mode
+bindkey "^R" history-incremental-search-backward
+# The following should allow the use of up and down arrows (after starting a history search with Control-R)
+# http://www.techrepublic.com/blog/linux-and-open-source/enhanced-history-searching-in-zsh/
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
