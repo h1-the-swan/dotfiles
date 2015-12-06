@@ -15,13 +15,11 @@ set incsearch  " Incremental search
 set ignorecase
 set smartcase
 
-" NOTE: I really can't figure out how UltiSnips is working.
-" It seems to recognize the snippets in ~/.vim/bundle/snipmate/snippets
-" So go there. I don't think the other ones are working
-let g:UltiSnipsSnippetsDir=$HOME."/.vim/bundle/snipmate/UltiSnips/"
-let g:UltiSnipsListSnippets="<C-i>"
-"let g:UltiSnipsEnapleSnipmate=0
+let g:UltiSnipsListSnippets='<c-i>i'
 
+" make *.tex files open with filetype=tex
+" http://superuser.com/questions/208177/vim-and-tex-filetypes-plaintex-vs-tex
+let g:tex_flavor="latex"
 
 
 " This is the default CursorLine background term color:
