@@ -20,6 +20,9 @@ let g:UltiSnipsListSnippets='<c-i>i'
 " make *.tex files open with filetype=tex
 " http://superuser.com/questions/208177/vim-and-tex-filetypes-plaintex-vs-tex
 let g:tex_flavor="latex"
+" disable conceal for TeX
+" http://stackoverflow.com/questions/18160953/disable-latex-symbol-conversion-in-vim
+let g:tex_conceal = ""
 
 
 " This is the default CursorLine background term color:
