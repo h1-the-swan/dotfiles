@@ -16,6 +16,8 @@ set ignorecase
 set smartcase
 
 let g:UltiSnipsListSnippets='<c-i>i'
+let g:UltiSnipsSnippetDirectories=['mysnippets', 'UltiSnips']
+let g:UltiSnipsSnippetsDir=expand("$HOME/.vim/mysnippets/")
 
 " make *.tex files open with filetype=tex
 " http://superuser.com/questions/208177/vim-and-tex-filetypes-plaintex-vs-tex
