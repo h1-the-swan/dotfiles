@@ -48,3 +48,17 @@ export PATH
 # Setting PATH for TeX
 PATH="/usr/texbin:${PATH}"
 export PATH
+
+# Linux-gnu specific settings
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	# colors
+	# http://superuser.com/questions/370556/vim-colors-not-working-properly-in-terminal
+	TERM=xterm-256color
+	export TERM
+	
+	# Setting PATH for Anaconda
+	PATH=/home/jason/anaconda2/bin:$PATH
+	export PATH
+fi
+
+
