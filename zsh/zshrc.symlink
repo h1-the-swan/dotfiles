@@ -49,6 +49,10 @@ export PATH
 PATH="/usr/texbin:${PATH}"
 export PATH
 
+# add my modules to python path
+PYTHONPATH=$HOME/.python_modules/:$PYTHONPATH
+export PYTHONPATH
+
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # Linux-gnu specific settings
@@ -59,7 +63,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	export TERM
 	
 	# Setting PATH for Anaconda
-	PATH=/home/jason/anaconda2/bin:$PATH
+	PATH=$HOME/anaconda2/bin:$PATH
 	export PATH
 fi
 
