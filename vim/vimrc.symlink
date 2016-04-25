@@ -15,7 +15,8 @@ set incsearch  " Incremental search
 set ignorecase
 set smartcase
 
-let g:UltiSnipsListSnippets='<c-i>i'
+" let g:UltiSnipsListSnippets='<c-i>i'
+let g:UltiSnipsListSnippets='<c-u>'
 let g:UltiSnipsSnippetDirectories=['mysnippets', 'UltiSnips']
 let g:UltiSnipsSnippetsDir=expand("$HOME/.vim/mysnippets/")
 
