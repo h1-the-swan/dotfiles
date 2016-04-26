@@ -16,7 +16,7 @@ set ignorecase
 set smartcase
 
 " let g:UltiSnipsListSnippets='<c-i>i'
-let g:UltiSnipsListSnippets='<c-u>'
+let g:UltiSnipsListSnippets='<c-x><c-x>'
 let g:UltiSnipsSnippetDirectories=['mysnippets', 'UltiSnips']
 let g:UltiSnipsSnippetsDir=expand("$HOME/.vim/mysnippets/")
 
