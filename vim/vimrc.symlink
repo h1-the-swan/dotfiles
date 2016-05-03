@@ -146,3 +146,6 @@ endfunction
 let g:ctrlp_buffer_func = { 'enter': 'CtrlPHighlightOn', 'exit': 'CtrlPHighlightOff', }
 " Map '`' to switch search modes (buffer, mru, file)
 let g:ctrlp_prompt_mappings = {'ToggleType(1)':        ['<c-f>', '<c-up>', '`'],}
+
+" jedi-vim
+let g:jedi#rename_command = "<leader>x"
