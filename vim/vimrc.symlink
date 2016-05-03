@@ -149,3 +149,5 @@ let g:ctrlp_prompt_mappings = {'ToggleType(1)':        ['<c-f>', '<c-up>', '`'],
 
 " jedi-vim
 let g:jedi#rename_command = "<leader>x"
+let g:jedi#goto_command = "<leader>g"
+" let g:jedi#goto_assignments_command = "gd"
