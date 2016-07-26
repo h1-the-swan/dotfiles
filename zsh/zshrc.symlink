@@ -72,3 +72,8 @@ CONFIG_VARS_FILE=~/.config_vars.zsh
 if [[ -f $CONFIG_VARS_FILE ]]; then
 	source $CONFIG_VARS_FILE
 fi
+
+# function to set up an ssh tunnel
+function tunnel() {
+	ssh -N -f -L localhost:${1}:localhost:${1} $2
+}
