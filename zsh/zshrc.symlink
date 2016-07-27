@@ -40,6 +40,10 @@ done
 
 unset config_files
 
+# Set default editor to vim
+EDITOR="vim"
+export EDITOR
+
 
 # Setting PATH for Python 2.7
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
@@ -68,7 +72,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 fi
 
 # load config file with environment variables
-CONFIG_VARS_FILE=~/.config_vars.zsh
+CONFIG_VARS_FILE=$HOME/.config_vars.zsh
 if [[ -f $CONFIG_VARS_FILE ]]; then
 	source $CONFIG_VARS_FILE
 fi
