@@ -77,3 +77,7 @@ fi
 function tunnel() {
 	ssh -N -f -L localhost:${1}:localhost:${1} $2
 }
+
+function hyaktunnel() {
+	ssh hyak -f "ssh -N -f -L localhost:8899:localhost:8899 $1"
+}
