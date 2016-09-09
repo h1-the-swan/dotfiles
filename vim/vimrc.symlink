@@ -151,3 +151,8 @@ let g:ctrlp_prompt_mappings = {'ToggleType(1)':        ['<c-f>', '<c-up>', '`'],
 let g:jedi#rename_command = "<leader>x"
 let g:jedi#goto_command = "<leader>g"
 " let g:jedi#goto_assignments_command = "gd"
+
+" manually switch filetypes
+nnoremap <leader>fj :setfiletype javascript<cr>
+nnoremap <leader>fd :setfiletype htmldjango<cr>
+nnoremap <leader>fh :setfiletype html<cr>
