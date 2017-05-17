@@ -69,6 +69,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	# Setting PATH for Anaconda
 	PATH=$HOME/anaconda2/bin:$PATH
 	export PATH
+
+	alias open=xdg-open
 fi
 
 # load config file with environment variables
