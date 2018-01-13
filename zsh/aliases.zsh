@@ -14,3 +14,7 @@ function httpserver() {
 }
 # Add the above function to FPATH
 fpath=( httpserver "${fpath[@]}" )
+
+
+# alias to open the last .log file in the current directory
+alias lastlog='less $(ls -t ./*.log | head -1)'
