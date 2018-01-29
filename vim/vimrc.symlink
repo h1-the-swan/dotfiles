@@ -1,10 +1,10 @@
 execute pathogen#infect()
 "syntax on
 syntax enable
-filetype on
-filetype plugin indent on
-set foldmethod=indent
-set foldlevel=99
+" filetype on
+" filetype plugin indent on
+" set foldmethod=indent
+" set foldlevel=99
 
 set scrolloff=3 " Keep 3 lines below and above the cursor
 
