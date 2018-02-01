@@ -1,8 +1,8 @@
 execute pathogen#infect()
-"syntax on
+syntax on
 syntax enable
-" filetype on
-" filetype plugin indent on
+filetype on
+filetype plugin indent on
 " set foldmethod=indent
 " set foldlevel=99
 
@@ -107,8 +107,8 @@ augroup pencil
 	autocmd FileType tex :PencilSoft
 	autocmd FileType text :PencilSoft
 	autocmd FileType markdown :PencilSoft
-	autocmd FileType html :PencilSoft
-	autocmd FileType htmldjango :PencilSoft
+	" autocmd FileType html :PencilSoft
+	" autocmd FileType htmldjango :PencilSoft
 augroup END
 
 " Tweaks for ctrlp.vim
