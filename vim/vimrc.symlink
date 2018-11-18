@@ -65,7 +65,7 @@ highlight SpellRare ctermfg=LightBlue ctermbg=NONE
 
 
 let g:pyflakes_use_quickfix = 0
-au FileType python set omnifunc=pythoncomplete#Complete
+" au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 nmap <leader>a <Esc>:Ack!
