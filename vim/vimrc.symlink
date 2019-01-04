@@ -67,7 +67,11 @@ highlight SpellRare ctermfg=LightBlue ctermbg=NONE
 let g:pyflakes_use_quickfix = 0
 " au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
+" set completeopt=menuone,longest,preview
+" 'longest' option automatically fills in the longest common prefix
+" But this is causing argparse to fill in args._
+" so disable it
+set completeopt=menuone,preview
 nmap <leader>a <Esc>:Ack!
 nnoremap <leader>v <Plug>TaskList
 nnoremap <leader>b :BufExplorer<CR>
